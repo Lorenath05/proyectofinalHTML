@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link de sitio SweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- LINK FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- LINK HOJAS DE ESTILOS CSS3 -->
+  <link rel="stylesheet" href="../css/SEMANA 17_EJERCICIO2 _ GALERÍA IMÁGENES VISTA LIGHTBOX _ JAVASCRIPT.css"><!-- 1ER CSS3 --> 
+  <link rel="shortcut icon" href="../img/logo play.jpg" type="image/png">
+  <title>Tienda Online</title>
+
+<body>
+
+<h2 style="text-align:center">**** VISOR DE IMÁGENES EN LIGHTBOX ****</h2>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <figcaption>Celular Xioami Mi10T</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9A</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/cel motorola g20 128gb.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>Celular Motorola G20</figcaption>
+  </div>
+</div>
+<!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../img/cel motorola g20 128gb.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Seccion de columnas de imágenes en miniatura -->
+
+    <div class="column">
+      <img class="demo cursor" src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%" onclick="currentSlide(1)" alt="celular-Huawei-Y9 2019 4G azul">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%" onclick="currentSlide(2)" alt="cel Xiaomi Mi10T 128GNegro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%" onclick="currentSlide(3)" alt="celular-huawei-y9A-128gb-negro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/cel motorola g20 128gb.jpg" style="width:100%" onclick="currentSlide(4)" alt="cel motorola g20 128gb">
+    </div>
+  </div>
+</div><br> <br>
+<footer>
+  <center>
+  <div class="container-fluid">
+      <div class="row Azulito">
+          <div class="col-xs-12 col-sm-8">
+              <br><b>2021</b> <br>Todos los derechos reservados para estudiante. &copy; <br> 
+          </div>
+          <div class="col-xs-12 col-sm-4">
+              <br> Direccion empresa <br>Bogotá D.C. - Colombia <br>Teléfono 57 (1) Phone-mobil
+              <br>
+          </div>
+          <br>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-12 Blanco">
+              
+                  <h5 class="designBy">
+                      Diseñado por: wendy pinilla 
+                  </h5>
+              </center>
+          </div>
+      </div>
+  </div>
+
+</footer>
+
+<script src="../js/_SEMANA 17_EJERCICIO2 _ GALERÍA IMÁGENES VISTA LIGHTBOX _ JAVASCRIPT.js"></script><!-- 1ER JS -->
+<script src=""></script><!-- 2DO JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+
+</body>
+</html>

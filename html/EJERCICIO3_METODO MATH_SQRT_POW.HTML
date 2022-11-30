@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head> <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONDICIONALES BASICAS</title>
+        
+    </head>
+<body>
+    <h1>USO DE MATH RAIZ CUADRADA Y POTENCIA </h1>
+    <h3>CON SENTENCIA SWITCH</h3>
+    <script>
+        //Programa que capture  dos numeros y permita seleccionar al usuario entre calcular 1. la raiz cuadrada 2.potencia//
+        let n1=parseFloat(prompt("Ingrese un numero"));//parseFloat-PARA DECIMALES
+        let n2=parseFloat(prompt("Ingrese el segundo numero"));
+        let oper=parseInt(prompt("Seleccione la operación a realizar : 1. Raiz Cuadrada --- 2. Potencia"));
+        switch (oper){//INTRUCCION PARA DETERMINAR QUE CASO SE DA VIFURCACION MENUS DE OPOCIONES 
+        case 1:
+            let r=Math.sqrt(n1);
+            let r1=Math.sqrt(n2);
+            document.write("CALCULOS BÁSICOS"+"<br>"+"<br>"+"PRIMER NUMERO .."+n1+"&nbsp"+ "&nbsp"+"&nbsp"+"RAIZ CUADRADA:.."+r+"<br>"+"SEGUNDO NUMERO .."+n2+ "&nbsp"+ "&nbsp"+"&nbsp"+"RAIZ CUADRADA.."+r1);
+            break;// PARA QUE SE SALGA
+        case 2:
+            let p=Math.pow(n1,n2);// POW ES POTENCIA 
+            document.write("CALCULOS BÁSICOS"+"<br>"+"<br>"+"NUMERO BASE .."+n1+"<br>"+ "EXPONENTE.."+n2+ "<br>"+"POTENCIA: ... "+n1+" ^ "+n2+":"+"&nbsp"+ "&nbsp"+"&nbsp"+p);
+            break;
+        default:// EN CASO DE ERROR EN LAS OPCIONES MENU
+            alert("Error en operación Seleccionada....")
+            break;
+        }
+</script>
+</body>
+</html>
